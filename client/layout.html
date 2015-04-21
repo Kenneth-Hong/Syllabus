@@ -1,0 +1,17 @@
+<template name="layout">
+	<div class="container">
+		<nav class="navbar navbar-default">
+			<ul class="nav nav-tabs">
+				<li role="presentation" class="active"><a href={{pathFor 'home'}}>Home</a></li>
+				<li role="presentation"><a href={{pathFor 'professor'}}>Professors</a></li>
+				<li role="presentation"><a href={{pathFor 'account'}}>Account</a></li>
+				<li role="presentation"><a href={{pathFor 'classmates'}}>Classmates</a></li>
+				<li role="presentation">Welcome Vanio</li>
+				<li role="presentation"><a href="">Log Out <img src=""></a></li>
+				<li role="presentation"><a href={{pathFor 'about'}}>About Us <img src=""></a></li>
+			</ul>
+		</nav>
+		{{>loginButtons}}
+		{{> yield}}
+	</div>
+</template>
